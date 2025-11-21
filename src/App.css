@@ -1,0 +1,139 @@
+/*////////////////////////////////////
+
+Table of contents:
+1. Global styles
+2. Reusables
+3. Typography
+4. Verkoopoverzicht
+5. Products
+
+
+////////////////////////////////////*/
+
+
+/*/////////////// Global Styles ///////////////*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 18px;
+}
+
+body {
+    padding: 40px;
+}
+
+li {
+    list-style: none;
+}
+
+/*/////////////// Reusables ///////////////*/
+
+button {
+    margin-right: 0.5rem;
+    padding: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+article {
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    width: 15rem;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/*/////////////////// Typography /////////////////*/
+
+h1, h2, h3, h4, h5, h6, p, a{
+    margin-bottom: 1rem;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+/*/////////////// Verkoopoverzicht ///////////////*/
+
+.verkoopoverzicht {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 3rem;
+}
+
+.soldProductsContainer {
+    color: green;
+    border: 1px solid green;
+    background-color: #EDFFF4;
+}
+
+.boughtStockContainer {
+    color: steelblue;
+    border: 1px solid steelblue;
+    background-color: #EDF8FF;
+}
+
+.toSellContainer {
+    color: indianred;
+    border: 1px solid indianred;
+    background-color: #FFEDED;
+}
+
+/*///////// Products  ///////*/
+
+.bestSellerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 3rem;
+    gap: 5rem;
+
+    border: 1px solid slategray;
+    background-color: #F5F5F5;
+    width: 51rem;
+}
+
+.productContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 3rem;
+    gap: 5rem;
+
+    width: 51rem;
+}
+
+.productInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+.productImage {
+    max-width: 250px;
+}
+
+.optionList {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.checkIcon, .minusIcon {
+    width: 10px;
+    margin-right: 0.3rem;
+}
+
