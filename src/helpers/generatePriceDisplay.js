@@ -1,3 +1,5 @@
-export function generatePriceDisplay(price) {
+function generatePriceDisplay(price) {
     return `€${price}`;
 }
+
+export default generatePriceDisplay;

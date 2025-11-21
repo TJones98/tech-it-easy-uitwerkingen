@@ -2,10 +2,10 @@
 
 Table of contents:
 1. Global styles
-2. Typography
-3. Verkoopoverzicht
-4. Best selling product overview
-5. Reusables
+2. Reusables
+3. Typography
+4. Verkoopoverzicht
+5. Products
 
 
 ////////////////////////////////////*/
@@ -27,8 +27,28 @@ body {
     padding: 40px;
 }
 
-section{
+li {
+    list-style: none;
+}
+
+/*/////////////// Reusables ///////////////*/
+
+button {
+    margin-right: 0.5rem;
+    padding: 0.25rem;
     margin-bottom: 1rem;
+}
+
+article {
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    width: 15rem;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
 }
 
 /*/////////////////// Typography /////////////////*/
@@ -53,74 +73,67 @@ h1 {
 .soldProductsContainer {
     color: green;
     border: 1px solid green;
-    border-radius: 5px;
     background-color: #EDFFF4;
-
-    width: 15rem;
-    padding: 2rem;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
 }
 
 .boughtStockContainer {
     color: steelblue;
     border: 1px solid steelblue;
-    border-radius: 5px;
     background-color: #EDF8FF;
-
-    width: 15rem;
-    padding: 2rem;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
 }
 
 .toSellContainer {
     color: indianred;
     border: 1px solid indianred;
-    border-radius: 5px;
     background-color: #FFEDED;
-
-    width: 15rem;
-    padding: 2rem;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
 }
 
-/*///////// Best selling product overview ///////*/
+/*///////// Products  ///////*/
 
-.bestSellingProductContainer {
+.bestSellerContainer {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 3rem;
+    gap: 5rem;
 
     border: 1px solid slategray;
-    border-radius: 5px;
     background-color: #F5F5F5;
-    padding: 2rem;
     width: 51rem;
 }
 
-.bestSellerImage {
-    width: 12rem;
+.productContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 3rem;
+    gap: 5rem;
+
+    width: 51rem;
+}
+
+.productInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+.productImage {
+    max-width: 250px;
+}
+
+.optionList {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
 }
 
 .checkIcon, .minusIcon {
     width: 10px;
-    margin-left: 6px;
+    margin-right: 0.3rem;
 }
 
-/*/////////////// Reusables ///////////////*/
-
-button {
-    margin-right: 0.5rem;
-    padding: 0.25rem;
-}

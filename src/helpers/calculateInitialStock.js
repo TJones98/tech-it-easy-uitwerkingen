@@ -1,4 +1,4 @@
-export function calculateInitialStock(productArray) {
+function calculateInitialStock(productArray) {
     let total = 0;
 
     for (let i = 0; i < productArray.length; i++) {
@@ -7,3 +7,5 @@ export function calculateInitialStock(productArray) {
 
     return total;
 }
+
+export default calculateInitialStock;

@@ -1,4 +1,4 @@
-export function generateStringScreenSizes(tv) {
+function generateStringScreenSizes(tv) {
     if (tv.availableSizes.length === 1) {
         return `${tv.availableSizes} inch (${Math.round(tv.availableSizes * 2.54)} cm)`
     }
@@ -11,4 +11,5 @@ export function generateStringScreenSizes(tv) {
     }
 }
 
+export default generateStringScreenSizes;
 

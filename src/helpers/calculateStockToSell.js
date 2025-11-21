@@ -1,6 +1,8 @@
-import {calculateInitialStock} from "./calculateInitialStock.js";
-import {calculateProductsSold} from "./calculateProductsSold.js";
+import calculateInitialStock from "./calculateInitialStock.js";
+import calculateProductsSold from "./calculateProductsSold.js";
 
-export function calculateStockToSell(productArray) {
+function calculateStockToSell(productArray) {
     return calculateInitialStock(productArray) - calculateProductsSold(productArray);
 }
+
+export default calculateStockToSell;

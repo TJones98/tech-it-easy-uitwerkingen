@@ -1,3 +1,5 @@
-export function generateProductName(tv) {
+function generateProductName(tv) {
     return `${tv.brand} ${tv.type} - ${tv.name}`;
 }
+
+export default generateProductName;
